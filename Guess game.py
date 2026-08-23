@@ -1,19 +1,14 @@
 import random
-# 1 ते 100 मधला random number घेतो
 n = random.randint(1,100)
 a = -1
 guesses = 0
 while(a != n):
-	#user कडून guess घेतो
 	a = int(input(" Guess The Number : "))
 	guesses += 1
 	if(a>n):
-		#number मोठा असेल तर Lower Number Please!
 		print(" Lower Number Please! ")
 	elif(a<n):
-		#number लहान असेल तर Higher Number Please!
-		print(" Higher Number Please! ")
-#बरोबर guess झाल्यावर total attempts दाखवतो		
+		print(" Higher Number Please! ")	
 print(f" You have gussed the number {n} correctly {guesses} attempts")
 
 '''
